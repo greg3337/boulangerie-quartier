@@ -55,7 +55,7 @@ export const categories: Category[] = [
         name: "Pain aux Noix",
         description: "Généreusement garni de cerneaux de noix, une alliance parfaite avec les fromages affinés.",
         price: "4,00 €",
-        image: "https://images.unsplash.com/photo-1571167530149-c1105da4e8e0?w=600&q=80",
+        image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80",
         alt: "Pain aux noix",
       },
     ],
