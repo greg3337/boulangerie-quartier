@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "La Fournée Bordelaise — Boulangerie Artisanale à Bordeaux",
   description:
     "Boulangerie artisanale au cœur de Bordeaux. Pains au levain, viennoiseries et pâtisseries maison depuis 1987. 12 rue Sainte-Catherine, 33000 Bordeaux.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- fond brun arrondi -->
+  <rect width="32" height="32" rx="6" fill="#2C1810"/>
+
+  <!-- tige centrale -->
+  <line x1="16" y1="29" x2="16" y2="7" stroke="#C9A84C" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- grain de tête -->
+  <ellipse cx="16" cy="6.5" rx="2.2" ry="3.2" fill="#C9A84C" transform="rotate(0 16 6.5)"/>
+
+  <!-- 1ère paire -->
+  <ellipse cx="12.5" cy="10.5" rx="2" ry="3" fill="#C9A84C" transform="rotate(-30 12.5 10.5)"/>
+  <ellipse cx="19.5" cy="10.5" rx="2" ry="3" fill="#C9A84C" transform="rotate(30 19.5 10.5)"/>
+
+  <!-- 2ème paire -->
+  <ellipse cx="11.5" cy="15" rx="2" ry="3" fill="#C9A84C" transform="rotate(-35 11.5 15)"/>
+  <ellipse cx="20.5" cy="15" rx="2" ry="3" fill="#C9A84C" transform="rotate(35 20.5 15)"/>
+
+  <!-- 3ème paire -->
+  <ellipse cx="12" cy="19.5" rx="1.8" ry="2.8" fill="#C9A84C" transform="rotate(-40 12 19.5)"/>
+  <ellipse cx="20" cy="19.5" rx="1.8" ry="2.8" fill="#C9A84C" transform="rotate(40 20 19.5)"/>
+</svg>
