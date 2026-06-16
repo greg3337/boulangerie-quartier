@@ -39,7 +39,7 @@ export const categories: Category[] = [
         name: "Pain de Seigle",
         description: "30% de farine de seigle Label Rouge, légèrement acidulé, idéal avec du fromage.",
         price: "3,20 €",
-        image: "https://images.unsplash.com/photo-1598373182133-52452f7691ef?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1559717865-a99cac1c5a32?w=800&q=80",
         alt: "Pain de seigle",
       },
       {
@@ -47,7 +47,7 @@ export const categories: Category[] = [
         name: "Pain d'Épeautre",
         description: "Farine d'épeautre bio, riche en protéines, au goût délicat et légèrement noisette.",
         price: "3,50 €",
-        image: "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1612203985729-442fbb12a740?w=800&q=80",
         alt: "Pain d'épeautre",
       },
       {
@@ -115,7 +115,7 @@ export const categories: Category[] = [
         name: "Éclair au Chocolat",
         description: "Pâte à choux aérienne, crème mousseline chocolat Guanaja, glaçage brillant.",
         price: "3,80 €",
-        image: "https://images.unsplash.com/photo-1612203985729-442fbb12a740?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=800&q=80",
         alt: "Éclair au chocolat",
       },
       {
@@ -123,7 +123,7 @@ export const categories: Category[] = [
         name: "Mille-Feuille Vanille",
         description: "Feuilletage caramélisé, crème pâtissière à la vanille Bourbon de Madagascar.",
         price: "4,20 €",
-        image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1464195244916-405fa0a82545?w=800&q=80",
         alt: "Mille-feuille vanille",
       },
       {
@@ -131,7 +131,7 @@ export const categories: Category[] = [
         name: "Tarte Citron Meringuée",
         description: "Lemon curd acidulé sur pâte sablée maison, meringuée à la flamme.",
         price: "4,50 €",
-        image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1551404973-761c83cd8339?w=800&q=80",
         alt: "Tarte citron meringuée",
       },
       {
@@ -139,7 +139,7 @@ export const categories: Category[] = [
         name: "Paris-Brest",
         description: "La grande classique : pâte à choux en couronne, crème pralinée, amandes effilées.",
         price: "4,80 €",
-        image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=800&q=80",
         alt: "Paris-Brest",
       },
       {
@@ -169,7 +169,7 @@ export const categories: Category[] = [
         name: "Chèvre & Miel",
         description: "Chèvre frais de Nouvelle-Aquitaine, miel de châtaignier, roquette et noix.",
         price: "6,20 €",
-        image: "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1626078436896-7e02cf01a8a3?w=800&q=80",
         alt: "Sandwich chèvre miel",
       },
       {
