@@ -97,10 +97,16 @@ export default function AProposContent() {
                   En 1987, Michel Dubois, jeune boulanger formé dans les Pyrénées, posait ses malles rue Sainte-Catherine avec une seule ambition : créer le meilleur pain de Bordeaux. Armé d&apos;un levain centenaire rapporté de son village natal et d&apos;une conviction inébranlable pour le travail bien fait, il ouvrait les portes de La Fournée Bordelaise.
                 </p>
                 <p>
-                  Trente-neuf ans plus tard, la transmission s&apos;est opérée naturellement : sa fille Sophie a rejoint le fournil, apportant son talent de pâtissière et une énergie créatrice qui a enrichi la carte de nouvelles douceurs sans en trahir l&apos;âme.
+                  Les premières années furent rudes. Seul dans son fournil glacé, Michel se levait à quatre heures du matin pour pétrir des pâtes que peu de clients venaient chercher. Les semaines passaient, les fins de mois étaient serrées, et plus d&apos;une fois il songea à tout abandonner. Mais il y avait quelque chose d&apos;obstiné dans ce jeune homme — une foi absolue que le bon pain finit toujours par trouver ceux qui savent l&apos;apprécier.
                 </p>
                 <p>
-                  Aujourd&apos;hui, une équipe de passionnés perpétue cette tradition : lever avant l&apos;aube, pétrir à la main, laisser le temps faire son œuvre, et ouvrir les portes à 7h avec le sourire de ceux qui savent qu&apos;ils ont bien fait leur travail.
+                  Le tournant vint un matin de décembre 1990. Raymond Escarpit, vieux boulanger à la retraite qui habitait la rue d&apos;à côté, poussa la porte presque par curiosité. Il repartit avec une miche, la goûta chez lui, et revint l&apos;après-midi même. &laquo; C&apos;est le pain de mon enfance &raquo;, dit-il simplement à Michel. Dans les semaines qui suivirent, le quartier Sainte-Catherine commença à s&apos;éveiller à l&apos;odeur du fournil. Le bouche-à-oreille fit le reste, plus efficacement que n&apos;importe quelle publicité.
+                </p>
+                <p>
+                  En 2005, porté par une clientèle fidèle et grandissante, Michel agrandit le fournil et recruta ses deux premiers compagnons boulangers. Dix ans plus tard, sa fille Sophie, fraîchement diplômée de l&apos;École Nationale Supérieure de Pâtisserie de Yssingeaux, rejoignit l&apos;aventure familiale. Elle apporta dans ses bagages des recettes délicates, une créativité qui renouvelait la carte sans jamais trahir son âme, et cette énergie propre à ceux qui ont choisi leur métier par vocation plutôt que par habitude.
+                </p>
+                <p>
+                  Trente-neuf ans plus tard, La Fournée Bordelaise est devenue une institution du quartier — une de ces adresses que les Bordelais glissent à l&apos;oreille des visiteurs avec une pointe de fierté. Aujourd&apos;hui, une équipe de passionnés perpétue cette tradition : lever avant l&apos;aube, pétrir à la main, laisser le temps faire son œuvre, et ouvrir les portes à 7h avec le sourire de ceux qui savent qu&apos;ils ont bien fait leur travail.
                 </p>
               </div>
             </motion.div>
