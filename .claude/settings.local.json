@@ -14,7 +14,9 @@
       "Bash(git push *)",
       "Bash(npm run *)",
       "Bash(git commit -m 'fix: remplace l'\\\\''URL image Pain aux Noix par une URL Unsplash fonctionnelle *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(Get-ChildItem *)",
+      "Bash(npx tsc *)"
     ]
   }
 }

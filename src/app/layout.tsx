@@ -3,6 +3,24 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  name: "La Fournée Bordelaise",
+  url: "https://boulangeriequartier.vercel.app",
+  telephone: "+33 5 56 00 00 00",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "12 rue Sainte-Catherine",
+    addressLocality: "Bordeaux",
+    postalCode: "33000",
+    addressCountry: "FR",
+  },
+  openingHours: ["Mo-Fr 07:00-19:30", "Sa 07:00-19:30", "Su 07:00-13:00"],
+  servesCuisine: "Boulangerie artisanale",
+};
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,10 +50,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      </head>
       <body className="font-sans bg-cream text-brown antialiased">
         <Header />
         <main>{children}</main>
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );

@@ -38,6 +38,15 @@ export default function HeroSection() {
         style={{ opacity }}
         className="relative z-10 text-center px-4 max-w-4xl mx-auto"
       >
+        <motion.div
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/40 bg-brown/30 backdrop-blur-sm text-gold text-xs tracking-widest uppercase mb-6"
+        >
+          🥖 Croissants chauds dès 7h · Ouvert jusqu&apos;à 19h30
+        </motion.div>
+
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
