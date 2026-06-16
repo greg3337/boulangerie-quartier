@@ -15,7 +15,7 @@ const pillars = [
     icon: Leaf,
     title: "Levain naturel",
     description:
-      "Notre levain chef, cultivé depuis 36 ans, est le secret d'une mie aérée et d'une conservation naturelle sans additifs.",
+      "Notre levain chef, cultivé depuis 39 ans, est le secret d'une mie aérée et d'une conservation naturelle sans additifs.",
   },
   {
     icon: Flame,

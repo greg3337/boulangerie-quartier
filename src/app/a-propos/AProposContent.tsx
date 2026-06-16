@@ -97,7 +97,7 @@ export default function AProposContent() {
                   En 1987, Michel Dubois, jeune boulanger formé dans les Pyrénées, posait ses malles rue Sainte-Catherine avec une seule ambition : créer le meilleur pain de Bordeaux. Armé d&apos;un levain centenaire rapporté de son village natal et d&apos;une conviction inébranlable pour le travail bien fait, il ouvrait les portes de La Fournée Bordelaise.
                 </p>
                 <p>
-                  Trente-six ans plus tard, la transmission s&apos;est opérée naturellement : sa fille Sophie a rejoint le fournil, apportant son talent de pâtissière et une énergie créatrice qui a enrichi la carte de nouvelles douceurs sans en trahir l&apos;âme.
+                  Trente-neuf ans plus tard, la transmission s&apos;est opérée naturellement : sa fille Sophie a rejoint le fournil, apportant son talent de pâtissière et une énergie créatrice qui a enrichi la carte de nouvelles douceurs sans en trahir l&apos;âme.
                 </p>
                 <p>
                   Aujourd&apos;hui, une équipe de passionnés perpétue cette tradition : lever avant l&apos;aube, pétrir à la main, laisser le temps faire son œuvre, et ouvrir les portes à 7h avec le sourire de ceux qui savent qu&apos;ils ont bien fait leur travail.
