@@ -52,7 +52,7 @@ export default function Header() {
                 className={`font-sans text-sm tracking-wider uppercase transition-colors duration-200 relative group ${
                   pathname === link.href
                     ? "text-gold font-medium"
-                    : "text-brown hover:text-gold"
+                    : "text-gold hover:text-gold-light"
                 }`}
               >
                 {link.label}
