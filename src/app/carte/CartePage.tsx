@@ -5,6 +5,13 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { categories } from "@/data/products";
 
+const categoryGradients: Record<string, string> = {
+  pains: "linear-gradient(135deg, #F5ECD7 0%, #C9A040 100%)",
+  viennoiseries: "linear-gradient(135deg, #FDF6EC 0%, #D4A840 100%)",
+  patisseries: "linear-gradient(135deg, #FDF6EC 0%, #F0D0C0 100%)",
+  sandwichs: "linear-gradient(135deg, #F0F4EC 0%, #C8D8B0 100%)",
+};
+
 export default function CartePage() {
   const [activeCategory, setActiveCategory] = useState(categories[0].id);
 
@@ -86,13 +93,24 @@ export default function CartePage() {
                   className="group bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <div className="relative h-52 overflow-hidden">
-                    <Image
-                      src={product.image}
-                      alt={product.alt}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
+                    {product.image ? (
+                      <Image
+                        src={product.image}
+                        alt={product.alt}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                    ) : (
+                      <div
+                        className="w-full h-full flex flex-col items-center justify-center gap-2 transition-transform duration-700 group-hover:scale-105"
+                        style={{ background: categoryGradients[activeCategory] }}
+                      >
+                        <span className="text-6xl select-none" role="img" aria-label={product.alt}>
+                          {product.emoji}
+                        </span>
+                      </div>
+                    )}
                   </div>
                   <div className="p-5">
                     <div className="flex justify-between items-start mb-2">
