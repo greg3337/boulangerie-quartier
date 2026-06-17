@@ -44,7 +44,7 @@ const item = {
 
 export default function SpecialtiesSection() {
   return (
-    <section className="py-24 bg-cream">
+    <section className="py-24 bg-cream dark:bg-night">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <motion.div
@@ -57,7 +57,7 @@ export default function SpecialtiesSection() {
           <span className="inline-block font-sans text-gold text-xs tracking-[0.4em] uppercase mb-4">
             Nos incontournables
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown dark:text-cream mb-4">
             Nos Spécialités
           </h2>
           <div className="w-16 h-px bg-gold mx-auto" />
@@ -75,7 +75,7 @@ export default function SpecialtiesSection() {
             <motion.div
               key={spec.title}
               variants={item}
-              className="group bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="group bg-white dark:bg-night-card overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <div className="relative h-64 overflow-hidden">
                 <Image
@@ -87,10 +87,10 @@ export default function SpecialtiesSection() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-serif text-xl font-semibold text-brown mb-3">
+                <h3 className="font-serif text-xl font-semibold text-brown dark:text-cream mb-3">
                   {spec.title}
                 </h3>
-                <p className="font-sans text-brown/70 text-sm leading-relaxed">
+                <p className="font-sans text-brown/70 dark:text-cream/70 text-sm leading-relaxed">
                   {spec.description}
                 </p>
               </div>

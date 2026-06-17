@@ -18,7 +18,7 @@ export default function CartePage() {
   const active = categories.find((c) => c.id === activeCategory)!;
 
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-cream dark:bg-night">
       {/* Page hero */}
       <div className="relative h-56 md:h-72 flex items-end pb-12 overflow-hidden bg-brown">
         <Image
@@ -40,7 +40,7 @@ export default function CartePage() {
       </div>
 
       {/* Category tabs */}
-      <div className="sticky top-20 z-30 bg-cream/95 backdrop-blur-md border-b border-brown/10 shadow-sm">
+      <div className="sticky top-20 z-30 bg-cream/95 dark:bg-night/95 backdrop-blur-md border-b border-brown/10 dark:border-night-border shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex overflow-x-auto gap-0 scrollbar-hide">
             {categories.map((cat) => (
@@ -50,7 +50,7 @@ export default function CartePage() {
                 className={`relative flex-shrink-0 font-sans text-sm tracking-wider uppercase px-6 py-5 transition-colors duration-200 ${
                   activeCategory === cat.id
                     ? "text-gold font-medium"
-                    : "text-brown/60 hover:text-brown"
+                    : "text-brown/60 dark:text-cream/60 hover:text-brown dark:hover:text-cream"
                 }`}
               >
                 {cat.label}
@@ -77,7 +77,7 @@ export default function CartePage() {
             transition={{ duration: 0.4 }}
           >
             <div className="mb-8">
-              <h2 className="font-serif text-3xl font-bold text-brown">
+              <h2 className="font-serif text-3xl font-bold text-brown dark:text-cream">
                 {active.label}
               </h2>
               <div className="w-12 h-px bg-gold mt-3" />
@@ -90,7 +90,7 @@ export default function CartePage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.45, delay: i * 0.07 }}
-                  className="group bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                  className="group bg-white dark:bg-night-card overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <div className="relative h-52 overflow-hidden">
                     {product.image ? (
@@ -114,14 +114,14 @@ export default function CartePage() {
                   </div>
                   <div className="p-5">
                     <div className="flex justify-between items-start mb-2">
-                      <h3 className="font-serif text-lg font-semibold text-brown">
+                      <h3 className="font-serif text-lg font-semibold text-brown dark:text-cream">
                         {product.name}
                       </h3>
                       <span className="font-sans text-gold font-semibold text-sm ml-3 flex-shrink-0">
                         {product.price}
                       </span>
                     </div>
-                    <p className="font-sans text-brown/65 text-sm leading-relaxed">
+                    <p className="font-sans text-brown/65 dark:text-cream/65 text-sm leading-relaxed">
                       {product.description}
                     </p>
                   </div>
@@ -133,8 +133,8 @@ export default function CartePage() {
       </div>
 
       {/* Bottom note */}
-      <div className="bg-warm py-10 text-center">
-        <p className="font-sans text-brown/60 text-sm max-w-xl mx-auto px-4">
+      <div className="bg-warm dark:bg-night-surface py-10 text-center">
+        <p className="font-sans text-brown/60 dark:text-cream/60 text-sm max-w-xl mx-auto px-4">
           Nos produits sont fabriqués chaque matin avec des ingrédients frais et de saison.
           Les disponibilités peuvent varier selon les jours. N&apos;hésitez pas à nous appeler.
         </p>

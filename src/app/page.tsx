@@ -3,6 +3,7 @@ import SpecialtiesSection from "@/components/SpecialtiesSection";
 import AvisClientsSection from "@/components/AvisClientsSection";
 import SavoirFaireSection from "@/components/SavoirFaireSection";
 import HorairesSection from "@/components/HorairesSection";
+import NewsletterSection from "@/components/NewsletterSection";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <AvisClientsSection />
       <SavoirFaireSection />
       <HorairesSection />
+      <NewsletterSection />
     </>
   );
 }

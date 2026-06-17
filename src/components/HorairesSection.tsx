@@ -16,7 +16,7 @@ const horaires = [
 
 export default function HorairesSection() {
   return (
-    <section className="py-24 bg-warm">
+    <section className="py-24 bg-warm dark:bg-night-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Horaires */}
@@ -29,7 +29,7 @@ export default function HorairesSection() {
             <span className="inline-block font-sans text-gold text-xs tracking-[0.4em] uppercase mb-4">
               Quand nous rendre visite
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown mb-8">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown dark:text-cream mb-8">
               Horaires
             </h2>
 
@@ -41,16 +41,16 @@ export default function HorairesSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.07 }}
-                  className={`flex justify-between items-center py-3 border-b border-brown/10 ${
+                  className={`flex justify-between items-center py-3 border-b border-brown/10 dark:border-cream/10 ${
                     h.closed ? "opacity-40" : ""
                   }`}
                 >
-                  <span className="font-sans font-medium text-brown text-sm">
+                  <span className="font-sans font-medium text-brown dark:text-cream text-sm">
                     {h.jour}
                   </span>
                   <span
                     className={`font-sans text-sm ${
-                      h.closed ? "text-brown/50 italic" : "text-brown/80"
+                      h.closed ? "text-brown/50 dark:text-cream/50 italic" : "text-brown/80 dark:text-cream/80"
                     }`}
                   >
                     {h.heures}
@@ -72,7 +72,7 @@ export default function HorairesSection() {
               <span className="inline-block font-sans text-gold text-xs tracking-[0.4em] uppercase mb-4">
                 Informations pratiques
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown mb-8">
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown dark:text-cream mb-8">
                 Nous Trouver
               </h2>
 
@@ -80,8 +80,8 @@ export default function HorairesSection() {
                 <div className="flex gap-4">
                   <MapPin size={20} className="text-gold flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-sans font-medium text-brown text-sm mb-0.5">Adresse</p>
-                    <p className="font-sans text-brown/70 text-sm">
+                    <p className="font-sans font-medium text-brown dark:text-cream text-sm mb-0.5">Adresse</p>
+                    <p className="font-sans text-brown/70 dark:text-cream/70 text-sm">
                       12 rue Sainte-Catherine
                       <br />
                       33000 Bordeaux
@@ -91,15 +91,15 @@ export default function HorairesSection() {
                 <div className="flex gap-4">
                   <Phone size={20} className="text-gold flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-sans font-medium text-brown text-sm mb-0.5">Téléphone</p>
-                    <p className="font-sans text-brown/70 text-sm">05 56 XX XX XX</p>
+                    <p className="font-sans font-medium text-brown dark:text-cream text-sm mb-0.5">Téléphone</p>
+                    <p className="font-sans text-brown/70 dark:text-cream/70 text-sm">05 56 XX XX XX</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <Clock size={20} className="text-gold flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-sans font-medium text-brown text-sm mb-0.5">Accès</p>
-                    <p className="font-sans text-brown/70 text-sm">
+                    <p className="font-sans font-medium text-brown dark:text-cream text-sm mb-0.5">Accès</p>
+                    <p className="font-sans text-brown/70 dark:text-cream/70 text-sm">
                       Tramway ligne B – Arrêt Sainte-Catherine
                       <br />
                       Parking Victor Hugo à 200m
@@ -111,7 +111,7 @@ export default function HorairesSection() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-brown hover:bg-brown-light text-cream font-sans font-semibold text-sm tracking-wider uppercase px-8 py-4 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 bg-brown dark:bg-night-card hover:bg-brown-light dark:hover:bg-night-card/80 text-cream font-sans font-semibold text-sm tracking-wider uppercase px-8 py-4 transition-all duration-300"
             >
               Nous contacter
             </Link>

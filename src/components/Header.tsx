@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
@@ -27,7 +28,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-cream/95 backdrop-blur-md shadow-sm"
+          ? "bg-cream/95 dark:bg-night/95 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
     >
@@ -38,13 +39,13 @@ export default function Header() {
             <span className="font-serif text-xl font-bold text-gold tracking-wide group-hover:text-gold-dark transition-colors">
               La Fournée
             </span>
-            <span className="font-serif text-sm text-brown-light tracking-[0.2em] uppercase">
+            <span className="font-serif text-sm text-brown-light dark:text-cream/60 tracking-[0.2em] uppercase">
               Bordelaise
             </span>
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -63,32 +64,36 @@ export default function Header() {
                 />
               </Link>
             ))}
+            <ThemeToggle />
           </nav>
 
-          {/* Mobile hamburger */}
-          <button
-            className="md:hidden p-2 text-brown hover:text-gold transition-colors"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Menu"
-          >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile: toggle + hamburger */}
+          <div className="md:hidden flex items-center gap-1">
+            <ThemeToggle />
+            <button
+              className="p-2 text-brown dark:text-cream hover:text-gold dark:hover:text-gold transition-colors"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Menu"
+            >
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-cream/98 backdrop-blur-md border-t border-warm">
+        <div className="md:hidden bg-cream/98 dark:bg-night/98 backdrop-blur-md border-t border-warm dark:border-night-border">
           <nav className="flex flex-col px-6 py-4 gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`font-sans text-sm tracking-wider uppercase py-2 border-b border-warm/60 transition-colors ${
+                className={`font-sans text-sm tracking-wider uppercase py-2 border-b border-warm/60 dark:border-night-border transition-colors ${
                   pathname === link.href
                     ? "text-gold font-medium"
-                    : "text-brown hover:text-gold"
+                    : "text-brown dark:text-cream/80 hover:text-gold"
                 }`}
               >
                 {link.label}

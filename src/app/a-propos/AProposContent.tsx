@@ -54,7 +54,7 @@ const values = [
 
 export default function AProposContent() {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-cream dark:bg-night">
       {/* Hero */}
       <div className="relative h-72 md:h-96 flex items-end pb-12 overflow-hidden">
         <Image
@@ -89,10 +89,10 @@ export default function AProposContent() {
               <span className="inline-block font-sans text-gold text-xs tracking-[0.4em] uppercase mb-4">
                 Les origines
               </span>
-              <h2 className="font-serif text-4xl font-bold text-brown mb-6">
+              <h2 className="font-serif text-4xl font-bold text-brown dark:text-cream mb-6">
                 Une histoire de passion transmise
               </h2>
-              <div className="space-y-4 font-sans text-brown/75 leading-relaxed">
+              <div className="space-y-4 font-sans text-brown/75 dark:text-cream/75 leading-relaxed">
                 <p>
                   En 1987, Michel Dubois, jeune boulanger formé dans les Pyrénées, posait ses malles rue Sainte-Catherine avec une seule ambition : créer le meilleur pain de Bordeaux. Armé d&apos;un levain centenaire rapporté de son village natal et d&apos;une conviction inébranlable pour le travail bien fait, il ouvrait les portes de La Fournée Bordelaise.
                 </p>
@@ -137,7 +137,7 @@ export default function AProposContent() {
       </section>
 
       {/* Valeurs */}
-      <section className="py-24 bg-brown">
+      <section className="py-24 bg-brown dark:bg-night-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -181,7 +181,7 @@ export default function AProposContent() {
       </section>
 
       {/* Équipe */}
-      <section className="py-24 bg-cream">
+      <section className="py-24 bg-cream dark:bg-night">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -193,7 +193,7 @@ export default function AProposContent() {
             <span className="inline-block font-sans text-gold text-xs tracking-[0.4em] uppercase mb-4">
               Ceux qui font La Fournée
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-brown dark:text-cream">
               L&apos;Équipe
             </h2>
             <div className="w-16 h-px bg-gold mx-auto mt-4" />
@@ -218,7 +218,7 @@ export default function AProposContent() {
                     sizes="160px"
                   />
                 </div>
-                <h3 className="font-serif text-lg font-semibold text-brown mb-1">
+                <h3 className="font-serif text-lg font-semibold text-brown dark:text-cream mb-1">
                   {member.name}
                 </h3>
                 <p className="font-sans text-gold text-xs tracking-wider uppercase">

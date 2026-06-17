@@ -38,7 +38,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-cream dark:bg-night">
       {/* Hero */}
       <div className="bg-brown pt-28 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
@@ -62,17 +62,17 @@ export default function ContactPage() {
           >
             {/* Infos */}
             <div>
-              <h2 className="font-serif text-2xl font-bold text-brown mb-6">
+              <h2 className="font-serif text-2xl font-bold text-brown dark:text-cream mb-6">
                 Informations
               </h2>
               <div className="space-y-5">
                 <div className="flex gap-4">
                   <MapPin size={20} className="text-gold flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-sans font-semibold text-brown text-sm mb-0.5">
+                    <p className="font-sans font-semibold text-brown dark:text-cream text-sm mb-0.5">
                       Adresse
                     </p>
-                    <p className="font-sans text-brown/70 text-sm">
+                    <p className="font-sans text-brown/70 dark:text-cream/70 text-sm">
                       12 rue Sainte-Catherine
                       <br />
                       33000 Bordeaux, France
@@ -82,12 +82,12 @@ export default function ContactPage() {
                 <div className="flex gap-4">
                   <Phone size={20} className="text-gold flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-sans font-semibold text-brown text-sm mb-0.5">
+                    <p className="font-sans font-semibold text-brown dark:text-cream text-sm mb-0.5">
                       Téléphone
                     </p>
                     <a
                       href="tel:0556000000"
-                      className="font-sans text-brown/70 text-sm hover:text-gold transition-colors"
+                      className="font-sans text-brown/70 dark:text-cream/70 text-sm hover:text-gold transition-colors"
                     >
                       05 56 XX XX XX
                     </a>
@@ -100,7 +100,7 @@ export default function ContactPage() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <Clock size={20} className="text-gold" />
-                <h2 className="font-serif text-2xl font-bold text-brown">
+                <h2 className="font-serif text-2xl font-bold text-brown dark:text-cream">
                   Horaires d&apos;ouverture
                 </h2>
               </div>
@@ -108,18 +108,18 @@ export default function ContactPage() {
                 {horaires.map((h) => (
                   <div
                     key={h.jour}
-                    className={`flex justify-between py-3 border-b border-brown/10 ${
+                    className={`flex justify-between py-3 border-b border-brown/10 dark:border-cream/10 ${
                       h.closed ? "opacity-40" : ""
                     }`}
                   >
-                    <span className="font-sans text-sm font-medium text-brown">
+                    <span className="font-sans text-sm font-medium text-brown dark:text-cream">
                       {h.jour}
                     </span>
                     <span
                       className={`font-sans text-sm ${
                         h.closed
-                          ? "text-brown/50 italic"
-                          : "text-brown/75"
+                          ? "text-brown/50 dark:text-cream/50 italic"
+                          : "text-brown/75 dark:text-cream/75"
                       }`}
                     >
                       {h.heures}
@@ -131,10 +131,10 @@ export default function ContactPage() {
 
             {/* Google Maps embed */}
             <div>
-              <h2 className="font-serif text-2xl font-bold text-brown mb-4">
+              <h2 className="font-serif text-2xl font-bold text-brown dark:text-cream mb-4">
                 Nous trouver
               </h2>
-              <div className="overflow-hidden border border-brown/10">
+              <div className="overflow-hidden border border-brown/10 dark:border-night-border">
                 <iframe
                   title="Carte La Fournée Bordelaise"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3920453977887!2d-0.5758499!3d44.8393296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e80c87e469%3A0x53adff9b39e04e6b!2sRue%20Sainte-Catherine%2C%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
@@ -155,7 +155,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            <h2 className="font-serif text-2xl font-bold text-brown mb-8">
+            <h2 className="font-serif text-2xl font-bold text-brown dark:text-cream mb-8">
               Envoyer un message
             </h2>
 
@@ -166,10 +166,10 @@ export default function ContactPage() {
                 className="flex flex-col items-center text-center py-16 gap-4"
               >
                 <CheckCircle size={48} className="text-gold" />
-                <h3 className="font-serif text-2xl font-semibold text-brown">
+                <h3 className="font-serif text-2xl font-semibold text-brown dark:text-cream">
                   Message envoyé !
                 </h3>
-                <p className="font-sans text-brown/70 text-sm max-w-xs">
+                <p className="font-sans text-brown/70 dark:text-cream/70 text-sm max-w-xs">
                   Merci pour votre message. Nous vous répondrons dans les plus
                   brefs délais.
                 </p>
@@ -188,7 +188,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="nom"
-                    className="block font-sans text-xs tracking-widest uppercase text-brown mb-2"
+                    className="block font-sans text-xs tracking-widest uppercase text-brown dark:text-cream mb-2"
                   >
                     Nom complet
                   </label>
@@ -200,8 +200,8 @@ export default function ContactPage() {
                       setForm((f) => ({ ...f, nom: e.target.value }))
                     }
                     placeholder="Jean Dupont"
-                    className={`w-full font-sans text-sm bg-white text-brown border px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-brown/30 ${
-                      errors.nom ? "border-red-400" : "border-brown/20"
+                    className={`w-full font-sans text-sm bg-white dark:bg-night-card text-brown dark:text-cream border px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-brown/30 dark:placeholder:text-cream/30 ${
+                      errors.nom ? "border-red-400" : "border-brown/20 dark:border-night-border"
                     }`}
                   />
                   {errors.nom && (
@@ -212,7 +212,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block font-sans text-xs tracking-widest uppercase text-brown mb-2"
+                    className="block font-sans text-xs tracking-widest uppercase text-brown dark:text-cream mb-2"
                   >
                     Adresse email
                   </label>
@@ -224,8 +224,8 @@ export default function ContactPage() {
                       setForm((f) => ({ ...f, email: e.target.value }))
                     }
                     placeholder="jean@exemple.fr"
-                    className={`w-full font-sans text-sm bg-white text-brown border px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-brown/30 ${
-                      errors.email ? "border-red-400" : "border-brown/20"
+                    className={`w-full font-sans text-sm bg-white dark:bg-night-card text-brown dark:text-cream border px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-brown/30 dark:placeholder:text-cream/30 ${
+                      errors.email ? "border-red-400" : "border-brown/20 dark:border-night-border"
                     }`}
                   />
                   {errors.email && (
@@ -236,7 +236,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block font-sans text-xs tracking-widest uppercase text-brown mb-2"
+                    className="block font-sans text-xs tracking-widest uppercase text-brown dark:text-cream mb-2"
                   >
                     Message
                   </label>
@@ -248,8 +248,8 @@ export default function ContactPage() {
                       setForm((f) => ({ ...f, message: e.target.value }))
                     }
                     placeholder="Votre message, une commande spéciale, une question..."
-                    className={`w-full font-sans text-sm bg-white text-brown border px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-brown/30 resize-none ${
-                      errors.message ? "border-red-400" : "border-brown/20"
+                    className={`w-full font-sans text-sm bg-white dark:bg-night-card text-brown dark:text-cream border px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-brown/30 dark:placeholder:text-cream/30 resize-none ${
+                      errors.message ? "border-red-400" : "border-brown/20 dark:border-night-border"
                     }`}
                   />
                   {errors.message && (
@@ -259,7 +259,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-brown hover:bg-brown-light text-cream font-sans font-semibold text-sm tracking-wider uppercase py-4 transition-all duration-300 hover:shadow-md"
+                  className="w-full bg-brown dark:bg-night-card hover:bg-brown-light dark:hover:bg-night-card/80 text-cream font-sans font-semibold text-sm tracking-wider uppercase py-4 transition-all duration-300 hover:shadow-md"
                 >
                   Envoyer le message
                 </button>

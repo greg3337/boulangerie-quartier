@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import Providers from "@/components/Providers";
 
 const schema = {
   "@context": "https://schema.org",
@@ -49,18 +50,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="fr" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
-      <body className="font-sans bg-cream text-brown antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <ScrollToTopButton />
+      <body className="font-sans bg-cream dark:bg-night text-brown dark:text-cream antialiased transition-colors duration-300">
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <ScrollToTopButton />
+        </Providers>
       </body>
     </html>
   );
